@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* 1200px보다 작을 때 */
+@media ( max-width: 1199px ) {
+    header .header_in {
+        width: 100%;
+        padding: 0 10px;
+    }
+    #contents {
+        width: 100%;
+    }
+    #contents section {
+        width: 50%;
+        height: 200px;
+    }
+    footer .footer_in {
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+/* 960px보다 작을 때 */
+@media ( max-width: 959px ) {
+    header .header_in h1 {
+        font-size: 25px;
+    }
+    header .header_in .sign span {
+        display: none;
+    }
+    header .header_in nav {
+        margin-left: -150px;
+    }
+    header .header_in nav ul li a {
+        margin: 0 7px;
+        font-size: 16px;
+    }
+}
+
+/* 600px보다 작을 때 */
+@media ( max-width: 719px ) {
+    header .header_in {
+        height: 50px;
+    }
+    header .header_in h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 50px;
+        float: none;
+    }
+    header .header_in nav {
+        position: fixed;
+        width: 300px;
+        top: 0;
+        left: -300px;
+        bottom: 0;
+        margin-left: 0;
+        padding: 70px 0 0 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(5px);
+        z-index: 4;
+    }
+    header .header_in nav button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 5px;
+    }
+    header .header_in nav ul li {
+        float: none;
+    }
+    header .header_in nav ul li a {
+        font-size: 18px;
+        margin: 0;
+        line-height: 50px;
+        color: #000;
+    }
+    header .header_in .sign {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        line-height: 50px;
+        float: none;
+    }
+    header .header_in .all_btn {
+        display: block;
+        line-height: 50px;
+    }
+    #contents section {
+        width: 100%;
+        float: none;
+    }
+    footer .footer_in {
+        text-align: center;
+    }
+}
